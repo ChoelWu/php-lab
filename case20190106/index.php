@@ -97,13 +97,13 @@ echo '<br>';
 echo '<pre>';
 
 // 闭包
-function display($msg) {
-    $showMsg = function($m) {
-        echo $m;
+function display($msg, $msgEx) {
+    $showMsg = function($m) use ($msgEx) {
+        echo $m . $msgEx;
     };
     $showMsg($msg);
 }
 echo '<pre>';
-display('hello world');
+display('hello world', 'PHP中文网');
 echo '<br>';
 echo '<pre>';
