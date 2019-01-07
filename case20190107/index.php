@@ -1,6 +1,21 @@
 <?php
-include "./smarty/libs/Smarty.class.php";
+include "Site.php";
 
-$smarty = new Smarty();
-$smarty->assign('name', 'world');
-$smarty->display("hello.html");
+var_dump(__LINE__);
+echo '<br>';
+var_dump(__FILE__);
+echo '<br>';
+var_dump(__DIR__);
+echo '<br>';
+var_dump(__FUNCTION__);
+echo '<br>';
+var_dump(__CLASS__);
+echo '<br>';
+var_dump(__METHOD__);
+echo '<br>';
+var_dump(__NAMESPACE__);
+
+
+$site = new Site();
+$site->setUrl('www.runoob.com');
+$site->getUrl();
