@@ -14,18 +14,24 @@
 // $str .= var_export($data,true);//数组转字符串
 // $str .= ';';
 
-class C {
-    private $prop;
+// class C {
+//     private $prop;
 
-    public function __construct($val) {
-        $this->prop = $val;
-    }
+//     public function __construct($val) {
+//         $this->prop = $val;
+//     }
 
-    public function __debugInfo() {
-        return [
-            'propSquared' => $this->prop ** 2,
-        ];
-    }
+//     public function __debugInfo() {
+//         return [
+//             'propSquared' => $this->prop ** 2,
+//         ];
+//     }
+// }
+
+// var_dump(new C(42));
+
+function auto($autoload = null) {
+	echo (!$autoload) ? 0 : 1;
 }
 
-var_dump(new C(42));
+auto();
