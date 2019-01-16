@@ -10,15 +10,21 @@ class Student
 {
     private $name = 'choel';
     public $age = 24;
+    public static $tet = 'ppap';
 
-    public function __get($name)
-    {
-        return $this->name;
-    }
-    public function __set($name, $value)
-    {
-        $this->name = $value;
-//        return $this->name = 'wuchao';
+//     public function __get($name)
+//     {
+//         return $this->name;
+//     }
+//     public function __set($name, $value)
+//     {
+//         $this->name = $value;
+// //        return $this->name = 'wuchao';
+//     }
+
+    public static function test() {
+        echo 'test';
+        echo '<br>';
     }
 }
 
