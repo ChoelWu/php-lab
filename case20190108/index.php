@@ -22,7 +22,7 @@ class Student
     }
 }
 
-$student = new Student();
+$student = new Employee();
 $student->name = 'wuchao';
 echo $student->name;
 //echo $student->name;

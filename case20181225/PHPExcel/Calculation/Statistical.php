@@ -3209,7 +3209,7 @@ class PHPExcel_Calculation_Statistical {
 	/**
 	 * TDIST
 	 *
-	 * Returns the probability of Student's T distribution.
+	 * Returns the probability of Employee's T distribution.
 	 *
 	 * @param	float		$value			Value for the function
 	 * @param	float		$degrees		degrees of freedom
